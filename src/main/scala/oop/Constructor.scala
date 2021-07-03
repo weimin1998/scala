@@ -12,6 +12,10 @@ class Person(inName:String,inAge:Int){
   var name: String = inName
   var age: Int = inAge
 
+  def this(name:String){
+    this("",0)
+    this.name  = name
+  }
 
   override def toString: String = {
     "info:"+name+","+age
